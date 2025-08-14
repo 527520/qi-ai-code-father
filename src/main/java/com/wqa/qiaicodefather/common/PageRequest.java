@@ -1,0 +1,36 @@
+package com.wqa.qiaicodefather.common;
+
+import com.wqa.qiaicodefather.constant.CommonConstant;
+import lombok.Data;
+
+/**
+ * @BelongsProject: qi-ai-code-father
+ * @BelongsPackage: com.wqa.qiaicodefather.common
+ * @Author: wuqian
+ * @CreateTime: 2025-08-14 22:34
+ * @Description: 分页请求
+ * @Version: 1.0
+ */
+@Data
+public class PageRequest {
+
+    /**
+     * 当前页号
+     */
+    private int current = 1;
+
+    /**
+     * 页面大小
+     */
+    private int pageSize = 10;
+
+    /**
+     * 排序字段
+     */
+    private String sortField;
+
+    /**
+     * 排序顺序（默认升序）
+     */
+    private String sortOrder = CommonConstant.SORT_ORDER_ASC;
+}
